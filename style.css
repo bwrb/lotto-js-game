@@ -1,0 +1,80 @@
+body {
+	background-color: black;
+	color:white;
+}
+.sz{
+	width:200px;
+	height:200px;
+	float:right!important;
+
+}
+.cyfra
+{
+	width:50px;
+	height:50px;
+	text-align:center;
+	padding:5px;
+	margin:5px;
+	border:3px solid #8b0000;
+	float:left;
+	cursor:pointer;
+	border-radius: 2%;
+	background-color: white;
+	color:#8b0000;
+	font-weight:bold;
+}
+.cyfra:hover{
+	background-color:#D3D3D3;
+}
+.ramka{
+		border-style: solid;
+		max-width: 430px;
+		float:right;
+		margin-right:100px;
+}
+.cyfral
+{
+	width:50px;
+	height:50px;
+	text-align:center;
+	padding:5px;
+	margin:5px;
+	border:3px solid black;
+	float:left;
+	border-radius: 50%;
+	background-color: yellow;
+}
+#w{
+	text-align:left;
+}
+#alfabet
+{
+	margin-left:50px;
+	text-align: center;
+	width:800px;
+	text-align:center;
+}
+
+.litera
+{
+	width:50px;
+	height:50px;
+	text-align:center;
+	padding:5px;
+	margin:5px;
+	border:3px solid gray;
+	float:left;
+	cursor:pointer;
+	border-radius: 15px;
+	background-color: white;
+}
+
+.litera:hover
+{
+	background-color: #222222;
+	color:white;
+	border:3 px solid white;
+}
+.s{
+	 display: inline;
+}
