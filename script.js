@@ -22,9 +22,9 @@ var element = "lit" + x;
  document.getElementById("wygra6").innerHTML = arr[5];
 */
 
- document.getElementById(element).style.background = "#330000";
- document.getElementById(element).style.color = "#C00000";
- document.getElementById(element).style.border = "3px solid #C00000";
+ document.getElementById(element).style.background = "yellow";
+ document.getElementById(element).style.color = "black";
+ document.getElementById(element).style.border = "3px solid black";
  document.getElementById(element).style.cursor = "default";
  document.getElementById(element).setAttribute("onclick",";");
 
