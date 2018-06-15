@@ -6,19 +6,17 @@
       	<link rel="stylesheet" type="text/css" href="style.css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-        <script src="script.js"></script>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 </head>
 
 <body>
-<h1 class="m-2">Welcome in the Lotto game, have a good luck and enjoy game !</h1>
+<img class="img-fluid" src="lotto.png" style="width:20%;">
 <div class="container-fluid">
 <div class=" my-4" id="cyfry"></div>
 </div>
 <h4 class="m-2">Winning number is: </h4>
+
 
 <div class="cyfral" id="l1"></div>
 <div class="cyfral" id="l2"></div>
@@ -29,19 +27,12 @@
 <br>
 <br>
 <br>
-<button id = "try" class="m-2" onclick="losowanie()" type="button">Try luck!</button>
-<button class="m-2" onclick="spr()" type="button">Check if you win!</button>
-<div class="m-2" id="w"></div>
-
-
-<div class="m-2 s" id="wygra1"></div>
-<div class="m-2 s" id="wygra2"></div>
-<div class="m-2 s" id="wygra3"></div>
-<div class="m-2 s" id="wygra4"></div>
-<div class="m-2 s" id="wygra5"></div>
-<div class="m-2 s" id="wygra6"></div>
-
-<div class="m-2 container-fluid" id="alfabet"></div>
-
+<div>
+<button class="ml-3 m-2 btn" onclick="spr()" type="button">Check if you win!</button>
+<div class="ml-3" id="suma" style="display:inline;">0€</div>
+<a onClick="window.location.reload()"><i class="fas fa-sync-alt m-2"></i></a>
+</div>
+<div class=" container-fluid" id="alfabet"></div>
+<script src="script.js"></script>
 </body>
 </html>
