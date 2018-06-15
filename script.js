@@ -1,6 +1,5 @@
 window.onload = function(){
 
-        wygrana()
         start()
  }
 
@@ -22,20 +21,19 @@ var element = "lit" + x;
  document.getElementById("wygra6").innerHTML = arr[5];
 */
 
- document.getElementById(element).style.background = "yellow";
+ document.getElementById(element).style.backgroundColor = "yellow";
  document.getElementById(element).style.color = "black";
  document.getElementById(element).style.border = "3px solid black";
  document.getElementById(element).style.cursor = "default";
  document.getElementById(element).setAttribute("onclick",";");
 
 if(arr.length >= 6){
-  document.getElementById("wygra1").innerHTML = "You can start :)";
   for(var i = 1;i < 50;i ++){
     var es = "lit"+i;
     document.getElementById(es).style.cursor = "default";
     document.getElementById(es).setAttribute("onclick",";");
   }
-
+  losowanie();
 }
 
 }
@@ -55,7 +53,7 @@ Array.prototype.shuffle = function() {
     }
     return input;
 }
-tempArray = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49];
+liczby = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49];
 
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -63,13 +61,13 @@ tempArray = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,2
 function losowanie ()
 {
   if(arr.length >= 6){
-  tempArray.shuffle();
-  document.getElementById("l1").innerHTML = tempArray[0];
-  document.getElementById("l2").innerHTML = tempArray[1];
-  document.getElementById("l3").innerHTML = tempArray[2];
-  document.getElementById("l4").innerHTML = tempArray[3];
-  document.getElementById("l5").innerHTML = tempArray[4];
-  document.getElementById("l6").innerHTML = tempArray[5];
+  liczby.shuffle();
+  document.getElementById("l1").innerHTML = liczby[0];
+  document.getElementById("l2").innerHTML = liczby[1];
+  document.getElementById("l3").innerHTML = liczby[2];
+  document.getElementById("l4").innerHTML = liczby[3];
+  document.getElementById("l5").innerHTML = liczby[4];
+  document.getElementById("l6").innerHTML = liczby[5];
   document.getElementById("try").setAttribute("onclick",";");
 
 }
@@ -78,29 +76,54 @@ else{
 }
 }
 
+var liczbyWygrane = 0;
 function spr()
 {
-  for(var i = 0;i < 5; i++){
-    if(arr[i]==tempArray[i]){
-      alert("Winning number is "+arr[i]);
-    }
+  if(arr.length != 6){
+    alert("First you need to select 6 figures");
   }
+  else{
 
+  if(liczby[0]==arr[0]||liczby[0]==arr[1]||liczby[0]==arr[2]||liczby[0]==arr[3]||liczby[0]==arr[4]||liczby[0]==arr[5])
+  {
+    
+    liczbyWygrane += 1;
+  }
+  else if(liczby[1]==arr[0]||liczby[1]==arr[1]||liczby[1]==arr[2]||liczby[1]==arr[3]||liczby[1]==arr[4]||liczby[1]==arr[5])
+  {
+    
+    liczbyWygrane += 1;
+  }
+  else if(liczby[2]==arr[0]||liczby[2]==arr[1]||liczby[2]==arr[2]||liczby[2]==arr[3]||liczby[2]==arr[4]||liczby[2]==arr[5])
+  {
+    
+    liczbyWygrane += 1;
+  }
+  else if(liczby[3]==arr[3]||liczby[3]==arr[1]||liczby[3]==arr[2]||liczby[3]==arr[3]||liczby[3]==arr[4]||liczby[3]==arr[5])
+  {
+    
+    liczbyWygrane += 1;
+  }
+  else if(liczby[4]==arr[0]||liczby[4]==arr[1]||liczby[4]==arr[2]||liczby[4]==arr[3]||liczby[4]==arr[4]||liczby[4]==arr[5])
+  {
+    
+    liczbyWygrane += 1;
+  }
+  else if(liczby[5]==arr[0]||liczby[5]==arr[1]||liczby[5]==arr[2]||liczby[5]==arr[3]||liczby[5]==arr[4]||liczby[5]==arr[5])
+  {
+    
+    liczbyWygrane += 1;
+  }
+  alert("You hit "+liczbyWygrane+" figures");
+  if(liczbyWygrane == 3){document.getElementById("suma").innerHTML = "24€";}
+  if(liczbyWygrane == 4){document.getElementById("suma").innerHTML = "170€";}
+  if(liczbyWygrane == 5){document.getElementById("suma").innerHTML = "5300€";}
+  if(liczbyWygrane == 6){document.getElementById("suma").innerHTML = "2 000 000€";}
+  if(liczbyWygrane < 3){document.getElementById("suma").innerHTML = "0€";}
+ 
+  }
 }
 
-function wygrana ()
-{
-
-	var w = (Math.random() * (50000000-2000000) + 2000000).toFixed(2);
-
-	function numberWithSpaces(w) {
-    var parts = w.toString().split(".");
-    parts[0] = parts[0].replace(/\B(?=(\d{3})+(?!\d))/g, " ");
-    return parts.join(".");
-}
-
-	document.getElementById("w").innerHTML ="Won for this draw is: "+numberWithSpaces(w)+' €';
-}
 
 var cyfry = new Array(49);
 
@@ -119,7 +142,6 @@ function start()
 	{
 		var element = "lit" + i;
 		tresc_diva = tresc_diva + '<input type="button" value="'+cyfry[i]+'" class="litera" onclick = "sprawdz('+i+')" id="'+element+'"></div>';
-		if( i % 7 == 7) tresc_diva = tresc_diva + '<div style="clear:both;"></input>'
 	}
 
 	document.getElementById("alfabet").innerHTML = tresc_diva;
