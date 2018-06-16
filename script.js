@@ -89,38 +89,40 @@ function spr()
     
     liczbyWygrane += 1;
   }
-  else if(liczby[1]==arr[0]||liczby[1]==arr[1]||liczby[1]==arr[2]||liczby[1]==arr[3]||liczby[1]==arr[4]||liczby[1]==arr[5])
+  if(liczby[1]==arr[0]||liczby[1]==arr[1]||liczby[1]==arr[2]||liczby[1]==arr[3]||liczby[1]==arr[4]||liczby[1]==arr[5])
   {
     
     liczbyWygrane += 1;
   }
-  else if(liczby[2]==arr[0]||liczby[2]==arr[1]||liczby[2]==arr[2]||liczby[2]==arr[3]||liczby[2]==arr[4]||liczby[2]==arr[5])
+  if(liczby[2]==arr[0]||liczby[2]==arr[1]||liczby[2]==arr[2]||liczby[2]==arr[3]||liczby[2]==arr[4]||liczby[2]==arr[5])
   {
     
     liczbyWygrane += 1;
   }
-  else if(liczby[3]==arr[3]||liczby[3]==arr[1]||liczby[3]==arr[2]||liczby[3]==arr[3]||liczby[3]==arr[4]||liczby[3]==arr[5])
+  if(liczby[3]==arr[3]||liczby[3]==arr[1]||liczby[3]==arr[2]||liczby[3]==arr[3]||liczby[3]==arr[4]||liczby[3]==arr[5])
   {
     
     liczbyWygrane += 1;
   }
-  else if(liczby[4]==arr[0]||liczby[4]==arr[1]||liczby[4]==arr[2]||liczby[4]==arr[3]||liczby[4]==arr[4]||liczby[4]==arr[5])
+  if(liczby[4]==arr[0]||liczby[4]==arr[1]||liczby[4]==arr[2]||liczby[4]==arr[3]||liczby[4]==arr[4]||liczby[4]==arr[5])
   {
     
     liczbyWygrane += 1;
   }
-  else if(liczby[5]==arr[0]||liczby[5]==arr[1]||liczby[5]==arr[2]||liczby[5]==arr[3]||liczby[5]==arr[4]||liczby[5]==arr[5])
+  if(liczby[5]==arr[0]||liczby[5]==arr[1]||liczby[5]==arr[2]||liczby[5]==arr[3]||liczby[5]==arr[4]||liczby[5]==arr[5])
   {
     
     liczbyWygrane += 1;
   }
-  alert("You hit "+liczbyWygrane+" figures");
+
   if(liczbyWygrane == 3){document.getElementById("suma").innerHTML = "24€";}
   if(liczbyWygrane == 4){document.getElementById("suma").innerHTML = "170€";}
   if(liczbyWygrane == 5){document.getElementById("suma").innerHTML = "5300€";}
   if(liczbyWygrane == 6){document.getElementById("suma").innerHTML = "2 000 000€";}
   if(liczbyWygrane < 3){document.getElementById("suma").innerHTML = "0€";}
- 
+
+  alert("You hit "+liczbyWygrane+" figures");
+  document.getElementById("przyc").setAttribute("onclick",";");
   }
 }
 
