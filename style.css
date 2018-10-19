@@ -1,24 +1,24 @@
 body {
-	background-color: black;
+	background-image: url(https://img00.deviantart.net/2bf1/i/2009/290/b/1/landscape_30_by_darksithanakin.png);
 	color:white;
 }
-.sz{
-	width:200px;
-	height:200px;
-	float:right!important;
 
+.center{
+	background-color: white;
+	width: 400px!important;
+	text-align: center!important;
+	margin:0 auto!important;
+	border-style: solid!important;
 }
+
 .cyfra
 {
 	width:50px;
 	height:50px;
 	text-align:center;
-	padding:5px;
-	margin:5px;
 	border:3px solid #8b0000;
-	float:left;
 	cursor:pointer;
-	border-radius: 2%;
+	border-radius: 50%!important;
 	background-color: white;
 	color:#8b0000;
 	font-weight:bold;
@@ -26,12 +26,7 @@ body {
 .cyfra:hover{
 	background-color:#D3D3D3;
 }
-.ramka{
-		border-style: solid;
-		max-width: 430px;
-		float:right;
-		margin-right:100px;
-}
+
 .cyfral
 {
 	width:50px;
@@ -41,15 +36,16 @@ body {
 	margin:5px;
 	border:3px solid black;
 	float:left;
-	border-radius: 50%;
+	border-radius: 50%!important;
 	background-color: yellow;
 }
-#w{
-	text-align:left;
-}
+
 #alfabet
-{	float:left;
-	width:350px;
+{	float: left;
+	margin-left:-17.5px;
+	background-color: white;
+	width:400px;
+	border-style:solid;
 }
 
 .litera
@@ -57,18 +53,18 @@ body {
 	width:50px;
 	height:50px;
 	text-align:center;
-	padding:5px;
-	margin:5px;
+	margin:3px;
 	border:3px solid red;
 	float:left;
 	cursor:pointer;
-	border-radius: 5px;
+	border-radius: 50%;
 	background-color: white;
 }
 
 .litera:hover
 {
-	background-color: gray;
-	color:white;
+	background-color: yellow;
+	color:black;
 	border:3 px solid white;
+	font-weight: bold;
 }
