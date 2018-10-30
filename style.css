@@ -1,52 +1,32 @@
-body {
-	background-image: url(https://img00.deviantart.net/2bf1/i/2009/290/b/1/landscape_30_by_darksithanakin.png);
-	color:white;
-}
 
 .center{
 	background-color: white;
-	width: 400px!important;
+	width: 500px!important;
 	text-align: center!important;
 	margin:0 auto!important;
-	border-style: solid!important;
 }
 
-.cyfra
-{
-	width:50px;
-	height:50px;
-	text-align:center;
-	border:3px solid #8b0000;
-	cursor:pointer;
-	border-radius: 50%!important;
-	background-color: white;
-	color:#8b0000;
-	font-weight:bold;
+.btn{
+	width:150px;
 }
-.cyfra:hover{
-	background-color:#D3D3D3;
-}
+
 
 .cyfral
 {
-	width:50px;
+	width: 50px !important;
 	height:50px;
 	text-align:center;
 	padding:5px;
 	margin:5px;
+	font-weight: bold;
 	border:3px solid black;
-	float:left;
+	display:inline-block;
+	margin:0 auto!important;
 	border-radius: 50%!important;
 	background-color: yellow;
 }
 
-#alfabet
-{	float: left;
-	margin-left:-17.5px;
-	background-color: white;
-	width:400px;
-	border-style:solid;
-}
+
 
 .litera
 {
@@ -54,16 +34,16 @@ body {
 	height:50px;
 	text-align:center;
 	margin:3px;
-	border:3px solid red;
-	float:left;
+	font-weight: bold;
+	border:3px solid black;
+	border-radius: 10%;
 	cursor:pointer;
-	border-radius: 50%;
 	background-color: white;
 }
 
 .litera:hover
 {
-	background-color: yellow;
+	background-color: gainsboro;
 	color:black;
 	border:3 px solid white;
 	font-weight: bold;

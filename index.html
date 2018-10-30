@@ -11,23 +11,25 @@
 </head>
 
 <body>
-<div class="center">
-  <div class="container">
+
+<div class="container center bg-success rounded shadow-lg">
 <img class="img-fluid" src="lotto.svg" style="width:50%;">
 <div class=" my-4" id="cyfry"></div>
-<h4 class="m-2">Winning number is: </h4>
+<div class="h4" id="napis"></div>
+
+<div >
 <div class="cyfral" id="l1"></div>
 <div class="cyfral" id="l2"></div>
 <div class="cyfral" id="l3"></div>
 <div class="cyfral" id="l4"></div>
 <div class="cyfral" id="l5"></div>
 <div class="cyfral" id="l6"></div>
-<button class="ml-3 m-2 btn" id="przyc" onclick="spr()" type="button">Check if you win!</button>
-<div class="ml-3" id="suma" style="display:inline;">0€</div>
-<a onClick="window.location.reload()"><i class="fas fa-sync-alt m-2"></i></a>
-<div id="alfabet"></div>
 </div>
+<button id="przyc" class="m-2 btn btn-dark" onclick="spr()" type="button">Check if you win!</button>
+<button class="m-2 btn btn-dark" onClick="window.location.reload()">Again?</button>
+<div class="container" id="alfabet"></div>
 </div>
+
 <script src="script.js"></script>
 </body>
 </html>
