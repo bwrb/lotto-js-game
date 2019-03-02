@@ -1,50 +1,44 @@
-
-.center{
-	background-color: white;
-	width: 500px!important;
-	text-align: center!important;
-	margin:0 auto!important;
+.center {
+  background-color: white;
+  height: 780px !important;
+  width: 500px !important;
+  text-align: center !important;
+  margin: 0 auto !important;
 }
 
-.btn{
-	width:150px;
+.btn {
+  width: 150px;
 }
 
-
-.cyfral
-{
-	width: 50px !important;
-	height:50px;
-	text-align:center;
-	padding:5px;
-	margin:5px;
-	font-weight: bold;
-	border:3px solid black;
-	display:inline-block;
-	margin:0 auto!important;
-	border-radius: 50%!important;
-	background-color: yellow;
+.cyfral {
+  width: 50px !important;
+  height: 50px;
+  text-align: center;
+  padding: 5px;
+  margin: 5px;
+  font-weight: bold;
+  border: 3px solid black;
+  display: inline-block;
+  margin: 0 auto !important;
+  border-radius: 50% !important;
+  background-color: yellow;
 }
 
-
-
-.litera
-{
-	width:50px;
-	height:50px;
-	text-align:center;
-	margin:3px;
-	font-weight: bold;
-	border:3px solid black;
-	border-radius: 10%;
-	cursor:pointer;
-	background-color: white;
+.litera {
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  margin: 3px;
+  font-weight: bold;
+  border: 3px solid black;
+  border-radius: 10%;
+  cursor: pointer;
+  background-color: white;
 }
 
-.litera:hover
-{
-	background-color: gainsboro;
-	color:black;
-	border:3 px solid white;
-	font-weight: bold;
+.litera:hover {
+  background-color: gainsboro;
+  color: black;
+  border: 3 px solid white;
+  font-weight: bold;
 }

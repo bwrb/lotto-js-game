@@ -19,7 +19,7 @@ function sprawdz(x) {
  document.getElementById("wygra6").innerHTML = arr[5];
 */
 
-  document.getElementById(element).style.backgroundColor = "yellow";
+  document.getElementById(element).style.backgroundColor = "red";
   document.getElementById(element).style.color = "black";
   document.getElementById(element).style.border = "3px solid black";
   document.getElementById(element).style.cursor = "default";
@@ -49,8 +49,8 @@ Array.prototype.shuffle = function() {
   }
   return input;
 };
-var liczby = []
-for(var i=1; i <= 49;i++){
+var liczby = [];
+for (var i = 1; i <= 49; i++) {
   liczby.push(i);
 }
 
@@ -137,7 +137,8 @@ function spr() {
       liczbyWygrane += 1;
     }
 
-    document.getElementById("napis").innerHTML = "You have " + liczbyWygrane + " numbers";
+    document.getElementById("napis").innerHTML =
+      "You have " + liczbyWygrane + " numbers";
     document.getElementById("przyc").setAttribute("onclick", ";");
   }
 }
@@ -151,7 +152,7 @@ for (i = 1; i <= 49; i++) {
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 function start() {
-  document.getElementById("napis").innerHTML ="Winning number is:";
+  document.getElementById("napis").innerHTML = "Winning number is:";
   var tresc_diva = "";
 
   for (i = 1; i <= 49; i++) {
