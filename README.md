@@ -1,4 +1,4 @@
 # lotto
 Very simple lottery game
 
-DEMO: https://wierzbart.github.io/lotto-js-game/
+DEMO: https://bartlomiejwierzbicki.github.io/lotto-js-game/
